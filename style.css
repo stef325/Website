@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Truculenta, sans-serif;
+}
+
+body{
+    
+    background-color: #031223;
+    color: aliceblue;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+}
