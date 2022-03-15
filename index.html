@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +8,239 @@
     <title>Home</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@100&display=swap');
-    
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Truculenta, sans-serif;
         }
-    
+
         body {
-    
+
             background-color: #031223;
             color: aliceblue;
         }
-    
+        html::-webkit-scrollbar{
+            width: 15px;
+            border-radius: 4px;
+            background: #00000064;
+        }
+        html::-webkit-scrollbar-thumb{
+            border-radius: 4px;
+            background: #00000093;
+        }
+
+
+        /*------------------------- header -------------------------*/
         header {
             display: flex;
             justify-content: flex-end;
             flex-direction: row;
             list-style: none;
             align-items: center;
-            padding: 30px;
-        }
-        nav-bar{
+            padding: 60px;
+            padding-right: 5%;
         }
 
+        .nav-bar {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-bar a {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        /*------------------------- header -------------------------*/
+
+
+        /*------------------------- home -------------------------*/
+        .home {
+            padding-top: 5%;
+            padding-bottom: 20%;
+        }
+
+        .logo {
+            font-size: 13rem;
+            text-align: center;
+            font-family: 'Zen Tokyo Zoo', cursive;
+        }
+
+        .sub-logo {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        /*------------------------- home -------------------------*/
+
+        /*------------------------- info -------------------------*/
+        .about-me {
+            margin: 30px;
+        }
+
+        .informations {
+            padding: 30px;
+            width: 60%;
+            height: 90%;
+            float: left;
+            font-size: 1.5rem;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .experience {
+            border-right: 3px;
+            border-left-style: solid;
+            text-align: center;
+            padding: 30px;
+            width: 40%;
+            float: left;
+            font-size: 1.5rem;
+
+        }
+
+        .experience p {
+            text-align: justify;
+        }
+
+
+        .linha{
+
+            float: right;
+            width: 100%;
+            padding-top: 30px;
+            border-bottom: aliceblue solid;
+            border-color: aliceblue;
+        }
+        
+
+        .hability{
+            padding: 30px;
+            width: 50%;
+            height: 90%;
+            float: left;
+            font-size: 1.5rem;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .hability h3{
+            text-align: center;
+        }
+
+        .certifications{
+            border-right: 3px;
+            border-left-style: solid;
+            padding: 30px;
+            height: 10%;
+            width: 50%;
+            float: left;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            
+        }
+        .certifications h3{
+            text-align: center;
+        }
+        .certifications ul{
+            line-height: 30px;
+            height: 200px;
+            overflow-y: scroll;
+            padding-left: 12%;
+        }
+        .certifications ::-webkit-scrollbar{
+            width: 7px;
+            border-radius: 2px;
+            background: #020c16;
+        }
+        .certifications ::-webkit-scrollbar-thumb{
+            border-radius: 2px;
+            background: #01070c;
+        }
+
+        /*------------------------- info -------------------------*/
+        
     </style>
 
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
-                <a href="#">Home</a>
-                <a href="#">Sobre Mim</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Contato</a>
-            
+            <a href="#">Home</a>
+            <a href="#">Sobre Mim</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Contato</a>
+
             <button>switch</button>
         </nav>
     </header>
 
-    <h1>logo</h1>
-    <h2>student</h2>
-    
+
+
 
     <main>
+        <section class="home">
+            <h1 class="logo">logo</h1>
+            <h2 class="sub-logo">student</h2>
+        </section>
+
         <section class="about-me">
             <div class="informations">
                 <h3>Olá, Meu nome é Bruna Stefany</h3>
-                <p>Tenho 18 anos, sou estudante de Análise e Desenvolvimento de Sistemas pelo Instituto Federal da Paraíba (IFPB) e moro em Paraíba - Brasil.
+                <p>Tenho 18 anos, sou estudante de Análise e Desenvolvimento de Sistemas pelo Instituto Federal da
+                    Paraíba (IFPB) e
+                    moro em Paraíba - Brasil.
+                </p><br>
+                <p>Estou sempre buscando conhecimento, e a partir disso, atualmente estou estudando desenvolvimento
+                    web como
+                    Front-end.
+                </p><br>
 
-                    Estou sempre buscando conhecimento, e a partir disso, atualmente estou estudando desenvolvimento web como Front-end.
-                    
-                    Amo jogos, e são eles que me inspiram a tentar construir diversas coisas por meio da programação.
+                <p>Amo jogos, e são eles que me inspiram a tentar construir diversas coisas por meio da
+                    programação.
                 </p>
             </div>
             <div class="experience">
                 <h3>Experiencia</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eius labore corporis sunt accusamus, velit cum nihil possimus magni dolorum obcaecati accusantium impedit reprehenderit enim non libero sequi nam deserunt!
-                Culpa distinctio nostrum quaerat quidem non, aliquid quas repudiandae alias tenetur voluptate ratione eaque quo perspiciatis reprehenderit aspernatur, quasi excepturi vero. Id, omnis voluptatem veritatis voluptates eos sunt error quas!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eius labore corporis sunt
+                    accusamus, velit cum
+                    nihil possimus magni dolorum obcaecati accusantium impedit reprehenderit enim non libero sequi
+                    nam deserunt!
+                    Culpa distinctio nostrum quaerat quidem non, aliquid quas repudiandae alias tenetur voluptate
+                    ratione eaque quo
+                    perspiciatis reprehenderit aspernatur, quasi excepturi vero. Id, omnis voluptatem veritatis
+                    voluptates eos sunt
+                    error quas!</p>
             </div>
+            <div class="linha"></div><br>
             <div class="hability">
-
+                <h3>Habilidades</h3>
             </div>
             <div class="certifications">
+                <h3>Cursos ou certificações</h3>
                 <ul>
-                    <h3>Cursos ou certificações</h3>
+                    
+                    <li>qwuyiqeuwye - eqweqweq</li>
+                    <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
+                    <li>dkasjhjhasd - asjkhasj</li>
+                    <li>qwuyiqeuwye - eqweqweq</li>
+                    <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
+                    <li>dkasjhjhasd - asjkhasj</li>
+                    <li>qwuyiqeuwye - eqweqweq</li>
+                    <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
+                    <li>dkasjhjhasd - asjkhasj</li>
+                    <li>qwuyiqeuwye - eqweqweq</li>
+                    <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
+                    <li>dkasjhjhasd - asjkhasj</li>
+                    <li>qwuyiqeuwye - eqweqweq</li>
+                    <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
+                    <li>dkasjhjhasd - asjkhasj</li>
                     <li>qwuyiqeuwye - eqweqweq</li>
                     <li>sdkjahsdkjahsdkjh - asdkjhasjkdh</li>
                     <li>dkasjhjhasd - asjkhasj</li>
@@ -81,9 +249,12 @@
         </section>
 
         <section class="portfolio">
-            <button>Web</button>
-            <button>Mobile</button>
-            <button>Lab</button>
+            <div class="nav-buttons">
+                <button>Web</button>
+                <button>Mobile</button>
+                <button>Lab</button>
+            </div>
+            
         </section>
         <section class="contact">
             <h3>Contato</h3>
@@ -97,9 +268,10 @@
     </main>
 
 
-    <footer>
+    <footer class="rodape">
         <h3>stef325</h3>
     </footer>
 
 </body>
+
 </html>

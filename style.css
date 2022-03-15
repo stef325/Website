@@ -1,19 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@100&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Truculenta, sans-serif;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 
-body{
-    
-    background-color: #031223;
-    color: aliceblue;
-}
-header {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    list-style: none;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Truculenta, sans-serif;
+        }
+
+        body {
+
+            background-color: #031223;
+            color: aliceblue;
+        }
+        html::-webkit-scrollbar{
+            width: 15px;
+            border-radius: 4px;
+            background: #00000064;
+        }
+        html::-webkit-scrollbar-thumb{
+            border-radius: 4px;
+            background: #00000093;
+        }
+
+
+        /*------------------------- header -------------------------*/
+        header {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+            padding: 60px;
+            padding-right: 5%;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-bar a {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        /*------------------------- header -------------------------*/
+
+
+        /*------------------------- home -------------------------*/
+        .home {
+            padding-top: 5%;
+            padding-bottom: 20%;
+        }
+
+        .logo {
+            font-size: 13rem;
+            text-align: center;
+            font-family: 'Zen Tokyo Zoo', cursive;
+        }
+
+        .sub-logo {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        /*------------------------- home -------------------------*/
+
+        /*------------------------- info -------------------------*/
+        .about-me {
+            margin: 30px;
+        }
+
+        .informations {
+            padding: 30px;
+            width: 60%;
+            height: 90%;
+            float: left;
+            font-size: 1.5rem;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .experience {
+            border-right: 3px;
+            border-left-style: solid;
+            text-align: center;
+            padding: 30px;
+            width: 40%;
+            float: left;
+            font-size: 1.5rem;
+
+        }
+
+        .experience p {
+            text-align: justify;
+        }
+
+
+        .linha{
+
+            float: right;
+            width: 100%;
+            padding-top: 30px;
+            border-bottom: aliceblue solid;
+            border-color: aliceblue;
+        }
+        
+
+        .hability{
+            padding: 30px;
+            width: 50%;
+            height: 90%;
+            float: left;
+            font-size: 1.5rem;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .hability h3{
+            text-align: center;
+        }
+
+        .certifications{
+            border-right: 3px;
+            border-left-style: solid;
+            padding: 30px;
+            height: 10%;
+            width: 50%;
+            float: left;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            
+        }
+        .certifications h3{
+            text-align: center;
+        }
+        .certifications ul{
+            line-height: 30px;
+            height: 200px;
+            overflow-y: scroll;
+            padding-left: 12%;
+        }
+        .certifications ::-webkit-scrollbar{
+            width: 7px;
+            border-radius: 2px;
+            background: #020c16;
+        }
+        .certifications ::-webkit-scrollbar-thumb{
+            border-radius: 2px;
+            background: #01070c;
+        }
+
+        /*------------------------- info -------------------------*/
